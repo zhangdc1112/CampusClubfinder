@@ -703,60 +703,37 @@ const App = () => {
       <div className="flex items-center justify-between">
         <div>
           <h3 className="text-base font-semibold text-slate-900">{expanded ? "校园导览地图" : "摆摊地图"}</h3>
-          <p className="mt-1 text-sm text-slate-500">
-            {expanded ? "按校园主路、草坪、水景和建筑分布查看百团大战摊位" : "百团大战西操场"}
-          </p>
+          <p className="mt-1 text-sm text-slate-500">以广场、桥、教学楼和操场地标查看社团摆摊位置</p>
         </div>
-        <span className="text-xs text-slate-500">{expanded ? "西操场主会场" : "百团大战西操场"}</span>
+        <span className="text-xs text-slate-500">百团大战西操场</span>
       </div>
 
       <div className={`mt-4 rounded-[28px] border border-slate-200 bg-[#edf4ea] p-3 ${expanded ? "shadow-inner" : ""}`}>
         <div className={`relative overflow-hidden rounded-[24px] border border-white/70 bg-[linear-gradient(180deg,#eef6eb_0%,#dbe9d7_100%)] ${expanded ? "h-[34rem]" : "h-[25rem]"}`}>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.45),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.28),transparent_24%)]" />
-          <div className="absolute left-[4%] top-[6%] h-[18%] w-[22%] rounded-[2rem] bg-[#cfe6bf] opacity-85" />
-          <div className="absolute right-[5%] top-[10%] h-[16%] w-[18%] rounded-[2rem] bg-[#cae8c2] opacity-85" />
-          <div className="absolute left-[10%] bottom-[11%] h-[16%] w-[18%] rounded-[2rem] bg-[#cde8c0] opacity-85" />
-          <div className="absolute right-[14%] bottom-[10%] h-[20%] w-[26%] rounded-[2rem] bg-[#c7e0b8] opacity-85" />
-          <div className="absolute left-[39%] top-[13%] h-[18%] w-[14%] rounded-[40%] bg-[linear-gradient(180deg,#a7ddff_0%,#72bdf6_100%)] opacity-90 shadow-[0_0_0_8px_rgba(255,255,255,0.28)]" />
-          <div className="absolute left-[42%] top-[17%] h-[10%] w-[8%] rounded-full border border-white/50" />
-          <div className="absolute left-[7%] right-[7%] top-[12%] h-5 rounded-full bg-[#d6d1c5] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]" />
-          <div className="absolute left-[9%] right-[9%] top-[13.7%] h-[2px] border-t border-dashed border-white/70" />
-          <div className="absolute bottom-[14%] left-[7%] right-[7%] h-5 rounded-full bg-[#d6d1c5] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]" />
-          <div className="absolute bottom-[15.7%] left-[9%] right-[9%] h-[2px] border-t border-dashed border-white/70" />
-          <div className="absolute left-[49.3%] top-[18%] bottom-[19%] w-5 -translate-x-1/2 rounded-full bg-[#d6d1c5] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]" />
+          <div className="absolute left-[4%] top-[7%] h-[16%] w-[26%] rounded-[2rem] bg-[#cfe6bf] opacity-90" />
+          <div className="absolute right-[6%] top-[9%] h-[14%] w-[20%] rounded-[2rem] bg-[#c8e3bf] opacity-90" />
+          <div className="absolute left-[9%] bottom-[12%] h-[18%] w-[22%] rounded-[2rem] bg-[#cae3c1] opacity-90" />
+          <div className="absolute right-[12%] bottom-[10%] h-[20%] w-[24%] rounded-[2rem] bg-[#c7dfb8] opacity-90" />
+          <div className="absolute left-[38%] top-[14%] h-[20%] w-[16%] rounded-[42%] bg-[linear-gradient(180deg,#a8defe_0%,#74bff5_100%)] opacity-95 shadow-[0_0_0_8px_rgba(255,255,255,0.28)]" />
+          <div className="absolute left-[41%] top-[20%] h-[8%] w-[10%] rounded-full border border-white/50" />
+          <div className="absolute left-[7%] right-[7%] top-[13%] h-5 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
+          <div className="absolute left-[10%] right-[10%] top-[14.7%] h-[2px] border-t border-dashed border-white/70" />
+          <div className="absolute bottom-[14%] left-[7%] right-[7%] h-5 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
+          <div className="absolute bottom-[15.7%] left-[10%] right-[10%] h-[2px] border-t border-dashed border-white/70" />
+          <div className="absolute left-[49.3%] top-[18%] bottom-[19%] w-5 -translate-x-1/2 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
           <div className="absolute left-[49.3%] top-[20%] bottom-[21%] w-[2px] -translate-x-1/2 border-l border-dashed border-white/70" />
-          <div className="absolute left-[14%] top-[19%] rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">北门入口</div>
-          <div className="absolute left-1/2 top-[5.5%] -translate-x-1/2 rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">主舞台 / 宣讲区</div>
-          <div className="absolute right-[14%] top-[19%] rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">学生中心 / 总服务台</div>
-          <div className="absolute left-[45%] top-[33%] -translate-x-1/2 rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">镜心湖</div>
-          <div className="absolute left-[14%] bottom-[21%] rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">饮水点</div>
-          <div className="absolute right-[14%] bottom-[21%] rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">休息草坪</div>
-          <div className="absolute left-1/2 bottom-[7%] -translate-x-1/2 rounded-2xl bg-white/88 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm">中轴步道 / 补给点 / 打卡区</div>
+          <div className="absolute left-[43.6%] top-[28.3%] h-8 w-16 -translate-x-1/2 rounded-full border-4 border-[#bda78c] bg-[#eadcc9] shadow-sm" />
 
-          <div className={`absolute left-[8%] top-[24%] rounded-[28px] border px-4 py-4 shadow-sm backdrop-blur-sm ${expanded ? "h-[24%] w-[24%]" : "h-[23%] w-[32%]"} ${mapZoneStyles["学术科技"]}`}>
-            <div className="text-sm font-semibold">A区 学术科技</div>
-            <div className="mt-1 text-xs">靠近理工楼与实验草坪，适合技术展示和设备体验</div>
-          </div>
-          <div className={`absolute right-[8%] top-[24%] rounded-[28px] border px-4 py-4 shadow-sm backdrop-blur-sm ${expanded ? "h-[24%] w-[24%]" : "h-[23%] w-[32%]"} ${mapZoneStyles["文艺表演"]}`}>
-            <div className="text-sm font-semibold">B区 文艺表演</div>
-            <div className="mt-1 text-xs">靠近舞台和观演通道，适合现场展示与互动招新</div>
-          </div>
-          <div className={`absolute left-[8%] bottom-[23%] rounded-[28px] border px-4 py-4 shadow-sm backdrop-blur-sm ${expanded ? "h-[24%] w-[24%]" : "h-[23%] w-[32%]"} ${mapZoneStyles["体育运动"]}`}>
-            <div className="text-sm font-semibold">C区 体育运动</div>
-            <div className="mt-1 text-xs">靠近操场与球类体验线，方便训练展示和报名</div>
-          </div>
-          <div className={`absolute right-[8%] bottom-[23%] rounded-[28px] border px-4 py-4 shadow-sm backdrop-blur-sm ${expanded ? "h-[24%] w-[24%]" : "h-[23%] w-[32%]"} ${mapZoneStyles["志愿公益"]}`}>
-            <div className="text-sm font-semibold">D区 志愿公益</div>
-            <div className="mt-1 text-xs">靠近服务帐篷与休息区，适合展示公益项目和活动咨询</div>
-          </div>
-          <div className={`absolute left-[37%] top-[24%] rounded-[28px] border px-4 py-4 shadow-sm backdrop-blur-sm ${expanded ? "h-[17%] w-[26%]" : "h-[12%] w-[26%]"} ${mapZoneStyles["创业实践"]}`}>
-            <div className="text-sm font-semibold">E区 创业实践</div>
-            <div className="mt-1 text-xs">连接主路和服务中心，路演咨询更集中</div>
-          </div>
-          <div className={`absolute left-[37%] bottom-[23%] rounded-[28px] border px-4 py-4 shadow-sm backdrop-blur-sm ${expanded ? "h-[17%] w-[26%]" : "h-[12%] w-[26%]"} ${mapZoneStyles["兴趣生活"]}`}>
-            <div className="text-sm font-semibold">F区 兴趣生活</div>
-            <div className="mt-1 text-xs">位于草坪边缘，适合摄影采风和内容展示</div>
-          </div>
+          <div className={`absolute left-[10%] top-[21%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>北门</div>
+          <div className={`absolute left-[24%] top-[22%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>理工楼</div>
+          <div className={`absolute right-[12%] top-[21%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>教学楼 A</div>
+          <div className={`absolute right-[10%] top-[42%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>学生中心</div>
+          <div className={`absolute left-[44.5%] top-[36%] -translate-x-1/2 rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>镜心湖</div>
+          <div className={`absolute left-[53%] top-[29%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[86px]"}`}>映水桥</div>
+          <div className={`absolute left-[17%] bottom-[25%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>中心广场</div>
+          <div className={`absolute right-[17%] bottom-[24%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>教学楼 B</div>
+          <div className={`absolute left-1/2 bottom-[6.5%] -translate-x-1/2 rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[130px]"}`}>西操场</div>
 
           {boothSpots.map((spot) => (
             <button
@@ -772,7 +749,6 @@ const App = () => {
                 </span>
                 <span className="rounded-xl bg-white/95 px-2 py-1.5 text-[10px] leading-4 text-slate-600 shadow-md ring-1 ring-slate-200">
                   <span className="block font-semibold text-slate-700">{spot.boothNo}</span>
-                  <span className={`block ${expanded ? "max-w-[92px]" : "max-w-[64px] truncate"}`}>{spot.note}</span>
                 </span>
               </span>
             </button>
@@ -801,18 +777,17 @@ const App = () => {
                   <span className={`h-2.5 w-2.5 rounded-full ${mapLegend[spot.category]}`} />
                   {spot.boothNo} {spot.name}
                 </span>
-                <span className="text-slate-400">{spot.note}</span>
               </button>
             ))}
           </div>
         </div>
         {expanded ? (
           <div className="rounded-2xl bg-slate-50 p-4">
-            <h4 className="text-sm font-semibold text-slate-900">看图建议</h4>
+            <h4 className="text-sm font-semibold text-slate-900">地图说明</h4>
             <div className="mt-3 space-y-2 text-xs leading-6 text-slate-600">
-              <p>先沿北门主路进入舞台区，再向左右分流到 A/B 两个热门区。</p>
-              <p>如果想避开拥挤，可从中轴步道直接去 E/F，再回到 C/D。</p>
-              <p>点击地图点位或右侧摊位卡片，都可以直接跳到社团详情。</p>
+              <p>地图只保留地标、主路和摊位代号，查看起来会更直观。</p>
+              <p>点击地图上的代号点位，或下方摊位卡片，都可以直接进入社团详情。</p>
+              <p>颜色仅用于区分社团类别，不再使用分区块说明。</p>
             </div>
           </div>
         ) : null}
