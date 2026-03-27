@@ -703,9 +703,8 @@ const App = () => {
       <div className="flex items-center justify-between">
         <div>
           <h3 className="text-base font-semibold text-slate-900">{expanded ? "校园导览地图" : "摆摊地图"}</h3>
-          <p className="mt-1 text-sm text-slate-500">以广场、桥、教学楼和操场地标查看社团摆摊位置</p>
         </div>
-        <span className="text-xs text-slate-500">百团大战西操场</span>
+        <span className="text-xs text-slate-500">星月广场</span>
       </div>
 
       <div className={`mt-4 rounded-[28px] border border-slate-200 bg-[#edf4ea] p-3 ${expanded ? "shadow-inner" : ""}`}>
@@ -715,25 +714,31 @@ const App = () => {
           <div className="absolute right-[6%] top-[9%] h-[14%] w-[20%] rounded-[2rem] bg-[#c8e3bf] opacity-90" />
           <div className="absolute left-[9%] bottom-[12%] h-[18%] w-[22%] rounded-[2rem] bg-[#cae3c1] opacity-90" />
           <div className="absolute right-[12%] bottom-[10%] h-[20%] w-[24%] rounded-[2rem] bg-[#c7dfb8] opacity-90" />
-          <div className="absolute left-[38%] top-[14%] h-[20%] w-[16%] rounded-[42%] bg-[linear-gradient(180deg,#a8defe_0%,#74bff5_100%)] opacity-95 shadow-[0_0_0_8px_rgba(255,255,255,0.28)]" />
-          <div className="absolute left-[41%] top-[20%] h-[8%] w-[10%] rounded-full border border-white/50" />
-          <div className="absolute left-[7%] right-[7%] top-[13%] h-5 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
-          <div className="absolute left-[10%] right-[10%] top-[14.7%] h-[2px] border-t border-dashed border-white/70" />
-          <div className="absolute bottom-[14%] left-[7%] right-[7%] h-5 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
-          <div className="absolute bottom-[15.7%] left-[10%] right-[10%] h-[2px] border-t border-dashed border-white/70" />
-          <div className="absolute left-[49.3%] top-[18%] bottom-[19%] w-5 -translate-x-1/2 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
-          <div className="absolute left-[49.3%] top-[20%] bottom-[21%] w-[2px] -translate-x-1/2 border-l border-dashed border-white/70" />
-          <div className="absolute left-[43.6%] top-[28.3%] h-8 w-16 -translate-x-1/2 rounded-full border-4 border-[#bda78c] bg-[#eadcc9] shadow-sm" />
+          <div className="absolute left-[38%] top-[15%] h-[17%] w-[17%] bg-[linear-gradient(180deg,#a8defe_0%,#74bff5_100%)] opacity-95 shadow-[0_0_0_8px_rgba(255,255,255,0.28)] [clip-path:polygon(14%_8%,38%_0%,70%_6%,92%_20%,100%_46%,92%_74%,76%_96%,40%_100%,18%_88%,0%_62%,4%_28%)]" />
+          <div className="absolute left-[41.5%] top-[19.8%] h-[5%] w-[6%] rounded-full border border-white/50" />
+          <div className="absolute left-[7%] right-[18%] top-[13%] h-5 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
+          <div className="absolute left-[10%] right-[21%] top-[14.7%] h-[2px] border-t border-dashed border-white/70" />
+          <div className="absolute left-[18%] right-[7%] bottom-[14%] h-5 rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
+          <div className="absolute bottom-[15.7%] left-[21%] right-[10%] h-[2px] border-t border-dashed border-white/70" />
+          <div className="absolute left-[27%] top-[28%] h-5 w-[12%] rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
+          <div className="absolute left-[30%] top-[29.7%] h-[2px] w-[6%] border-t border-dashed border-white/70" />
+          <div className="absolute left-[57%] top-[31%] h-5 w-[16%] rounded-full bg-[#d8d2c8] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]" />
+          <div className="absolute left-[60%] top-[32.7%] h-[2px] w-[10%] border-t border-dashed border-white/70" />
+          <div className="absolute left-[54%] top-[26.8%] h-8 w-16 rounded-full border-4 border-[#bda78c] bg-[#eadcc9] shadow-sm" />
+          <div className="absolute left-[20%] top-[18%] h-[12%] w-[12%] rounded-lg border border-slate-300 bg-[#efe7d9] shadow-sm" />
+          <div className="absolute right-[14%] top-[18%] h-[12%] w-[12%] rounded-lg border border-slate-300 bg-[#efe7d9] shadow-sm" />
+          <div className="absolute right-[13%] bottom-[18%] h-[12%] w-[12%] rounded-lg border border-slate-300 bg-[#efe7d9] shadow-sm" />
+          <div className="absolute left-[14%] bottom-[20%] h-[13%] w-[14%] rounded-xl border border-slate-300 bg-[#f1eadf] shadow-sm" />
 
           <div className={`absolute left-[10%] top-[21%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>北门</div>
-          <div className={`absolute left-[24%] top-[22%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>理工楼</div>
-          <div className={`absolute right-[12%] top-[21%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>教学楼 A</div>
+          <div className={`absolute left-[23.5%] top-[31%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>理工楼</div>
+          <div className={`absolute right-[12%] top-[31%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>教学楼 A</div>
           <div className={`absolute right-[10%] top-[42%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>学生中心</div>
           <div className={`absolute left-[44.5%] top-[36%] -translate-x-1/2 rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>镜心湖</div>
-          <div className={`absolute left-[53%] top-[29%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[86px]"}`}>映水桥</div>
-          <div className={`absolute left-[17%] bottom-[25%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>中心广场</div>
-          <div className={`absolute right-[17%] bottom-[24%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[110px]"}`}>教学楼 B</div>
-          <div className={`absolute left-1/2 bottom-[6.5%] -translate-x-1/2 rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[130px]"}`}>西操场</div>
+          <div className={`absolute left-[60%] top-[23%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[86px]"}`}>映水桥</div>
+          <div className={`absolute left-[17%] bottom-[34%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>中心广场</div>
+          <div className={`absolute right-[17%] bottom-[31%] rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[96px]"}`}>教学楼 B</div>
+          <div className={`absolute left-1/2 bottom-[6.5%] -translate-x-1/2 rounded-2xl bg-white/90 px-3 py-2 text-xs font-medium text-slate-600 shadow-sm ${expanded ? "" : "max-w-[130px]"}`}>星月广场</div>
 
           {boothSpots.map((spot) => (
             <button
